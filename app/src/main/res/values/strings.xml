@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Solus</string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Hello People!</string>
+    <string name="slide_1_desc">Techofes is here!</string>
+
+    <string name="slide_2_title">Event Tickets</string>
+    <string name="slide_2_desc">Book event tickets for your friends!</string>
+
+    <string name="slide_3_title">Great Discounts</string>
+    <string name="slide_3_desc">Best discounts on every single event!</string>
+
+    <string name="slide_4_title">Workshops</string>
+    <string name="slide_4_desc">Gain extensive knowledge!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="Techofes">Techofes</string>>
+</resources>
