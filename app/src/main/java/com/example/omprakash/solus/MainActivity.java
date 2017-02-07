@@ -87,7 +87,10 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_event) {
-            // Handle the camera action
+                EventFragment eventFragment = new EventFragment();
+            FragmentManager manager = getSupportFragmentManager();
+            manager.beginTransaction().replace(R.id.content_main,eventFragment,eventFragment.getTag()).commit();
+
         } else if (id == R.id.nav_workshop) {
 
         } else if (id == R.id.nav_pro_night) {
