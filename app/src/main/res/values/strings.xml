@@ -1,4 +1,21 @@
 <resources>
+    <string-array name="event_list">
+        <string name="design_and_media">Design And Media</string>
+        <string name="online">Online</string>
+        <string name="adventure">Adventure</string>
+        <string name="fine_arts">Fine Arts</string>
+        <string name="thespian">Thespian</string>
+        <string name="variety_show">Variety Show</string>
+        <string name="quiz">Quiz</string>
+        <string name="sport">Sport</string>
+        <string name="gamindrome">Gamindrome</string>
+        <string name="word_games">Word Games</string>
+        <string name="dance">Dance</string>
+        <string name="lit_fes">LIT FES</string>
+        <string name="tamil">Tamil</string>
+        <string name="music">Music</string>
+        <string name="fun">Fun</string>
+    </string-array>
     <string name="app_name">Solus</string>
     <string name="title_activity_welcome">Home Screen</string>
     <string name="next">NEXT</string>
