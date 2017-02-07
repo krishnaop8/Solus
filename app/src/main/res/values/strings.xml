@@ -1,20 +1,20 @@
 <resources>
     <string-array name="event_list">
-        <string name="design_and_media">Design And Media</string>
-        <string name="online">Online</string>
-        <string name="adventure">Adventure</string>
-        <string name="fine_arts">Fine Arts</string>
-        <string name="thespian">Thespian</string>
-        <string name="variety_show">Variety Show</string>
-        <string name="quiz">Quiz</string>
-        <string name="sport">Sport</string>
-        <string name="gamindrome">Gamindrome</string>
-        <string name="word_games">Word Games</string>
-        <string name="dance">Dance</string>
-        <string name="lit_fes">LIT FES</string>
-        <string name="tamil">Tamil</string>
-        <string name="music">Music</string>
-        <string name="fun">Fun</string>
+        <item name="design_and_media">Design And Media</item>
+        <item name="online">Online</item>
+        <item name="adventure">Adventure</item>
+        <item name="fine_arts">Fine Arts</item>
+        <item name="thespian">Thespian</item>
+        <item name="variety_show">Variety Show</item>
+        <item name="quiz">Quiz</item>
+        <item name="sport">Sport</item>
+        <item name="gamindrome">Gamindrome</item>
+        <item name="word_games">Word Games</item>
+        <item name="dance">Dance</item>
+        <item name="lit_fes">LIT FES</item>
+        <item name="tamil">Tamil</item>
+        <item name="music">Music</item>
+        <item name="fun">Fun</item>
     </string-array>
     <string name="app_name">Solus</string>
     <string name="title_activity_welcome">Home Screen</string>

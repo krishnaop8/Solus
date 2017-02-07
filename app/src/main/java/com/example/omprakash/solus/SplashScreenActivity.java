@@ -137,7 +137,7 @@ public class SplashScreenActivity extends Activity {
 
     private void launchHomeScreen() {
         prefManager.setFirstTimeLaunch(false);
-        Toast.makeText(this,"Welcome",Toast.LENGTH_LONG).show();
+        //Toast.makeText(this,"Welcome",Toast.LENGTH_LONG).show();
         startActivity(new Intent(SplashScreenActivity.this, MainActivity.class));
         finish();
     }
