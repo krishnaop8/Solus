@@ -3,6 +3,7 @@ package com.example.omprakash.solus;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -94,6 +95,9 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_blog) {
 
         } else if (id == R.id.nav_about) {
+            AboutFragment aboutFragment = new AboutFragment();
+            FragmentManager manager = getSupportFragmentManager();
+            manager.beginTransaction().replace(R.id.content_main,aboutFragment,aboutFragment.getTag()).commit();
 
         } else if (id == R.id.nav_contact) {
 
