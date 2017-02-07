@@ -2,12 +2,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.omprakash.solus.AboutFragment">
+    tools:context="com.example.omprakash.solus.AboutFragment"
+    android:background="@color/bg_screen1"
+    android:padding="10dp">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:text="@string/about_techofes"
+        android:id="@+id/aboutTechofes"
+        android:textSize="22sp"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/TechofesTitle"
+        android:textColor="#fff"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="Techofes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:id="@+id/TechofesTitle"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="monospace" />
 
 </RelativeLayout>
