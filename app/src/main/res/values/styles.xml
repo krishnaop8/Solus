@@ -3,23 +3,23 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">#f64c73</item>
-        <item name="colorPrimaryDark">#f64c73</item>
+        <item name="colorPrimary">#FF5722</item>
+        <item name="colorPrimaryDark">#E64A19</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:windowBackground">@color/bg_screen1</item>
+        <item name="android:windowBackground">@color/toolbar</item>
     </style>
     <style name="Techofes" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">#f64c73</item>
-        <item name="colorPrimaryDark">#f64c73</item>
+        <item name="colorPrimary">#FF5722</item>
+        <item name="colorPrimaryDark">#E64A19</item>
         <item name="colorAccent">#ffffff</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
-        <item name="colorPrimary">#f64c73</item>
-        <item name="colorPrimaryDark">#f64c73</item>
+        <item name="colorPrimary">#FF5722</item>
+        <item name="colorPrimaryDark">#E64A19</item>
         <item name="colorAccent">#ffffff</item>
-        <item name="android:background">#f64c73</item>>
+        <item name="android:background">#FF5722</item>>
     </style>
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />

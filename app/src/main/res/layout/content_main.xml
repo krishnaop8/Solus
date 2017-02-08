@@ -9,8 +9,11 @@
     tools:context="com.example.omprakash.solus.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
-    <android.support.v7.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/recyclerView"/>
+    <android.support.v4.view.ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/imageSlider"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:background="@color/toolbar"
+        />
 </RelativeLayout>

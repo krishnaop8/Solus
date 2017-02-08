@@ -3,6 +3,7 @@ package com.example.omprakash.solus;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -18,6 +19,7 @@ import java.util.List;
 public class EventFragment extends Fragment {
     private RecyclerView mRecyclerView;
     private LinearLayoutManager mLinearLayoutManager;
+    private GridLayoutManager gridLayoutManager;
     private EventsAdapter eventsAdapter;
     private ArrayList<Events> EventList;
 
@@ -31,7 +33,8 @@ public class EventFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_event, container, false);
         mRecyclerView = (RecyclerView)view.findViewById(R.id.recyclerView);
-        mLinearLayoutManager = new LinearLayoutManager(EventFragment.this.getActivity());
+        gridLayoutManager = new GridLayoutManager(EventFragment.this.getActivity(),2);
+        //mLinearLayoutManager = new LinearLayoutManager(EventFragment.this.getActivity());
         String[] eventsList = getResources().getStringArray(R.array.event_list);
         List<String> mEventsList = new ArrayList<String>(Arrays.asList(eventsList));
         EventList = new ArrayList<Events>();
@@ -41,9 +44,10 @@ public class EventFragment extends Fragment {
             Events e = new Events(s);
             EventList.add(e);
         }
-        eventsAdapter = new EventsAdapter(EventList);
-        mRecyclerView.setLayoutManager(mLinearLayoutManager);
+        eventsAdapter = new EventsAdapter(EventList,EventFragment.this.getContext());
+        mRecyclerView.setLayoutManager(gridLayoutManager);
         mRecyclerView.setAdapter(eventsAdapter);
+       // mRecyclerView.setHasFixedSize(true);
         return view;
     }
 

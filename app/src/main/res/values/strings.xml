@@ -16,7 +16,7 @@
         <item name="music">Music</item>
         <item name="fun">Fun</item>
     </string-array>
-    <string name="app_name">Solus</string>
+    <string name="app_name">Techofes</string>
     <string name="title_activity_welcome">Home Screen</string>
     <string name="next">NEXT</string>
     <string name="skip">SKIP</string>

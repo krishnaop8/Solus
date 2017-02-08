@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.omprakash.solus.AboutFragment"
-    android:background="@color/bg_screen1"
+    android:background="#fff"
     android:padding="10dp">
 
     <!-- TODO: Update blank fragment layout -->
@@ -16,7 +16,7 @@
         android:padding="5dp"
         android:layout_marginTop="10dp"
         android:layout_below="@+id/TechofesTitle"
-        android:textColor="#fff"
+        android:textColor="#000"
         android:textAlignment="center" />
 
     <TextView
