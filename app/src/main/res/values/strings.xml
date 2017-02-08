@@ -21,7 +21,27 @@
     <string name="next">NEXT</string>
     <string name="skip">SKIP</string>
     <string name="start">GOT IT</string>
-    <string name="about_techofes">Techofes, the inter college social and cultural festival, is a paragon of exultancy which enables the students to exploit their gamut of dexterous abilities that remains surreptitious inside their soul and to portray their talents to the outer world. Unlike its counterpart Agni , Techofes spots light on all the students in and around the nation. The Arts Society has subjugated the obstreperous ambience for several years and the 70th edition also promises to deliver even better enchantments and gaiety, making the memories indelible.</string>
+
+
+    <string-array name="about_strings">
+
+        <item>CEG was established in May of 1794, as a School of Survey with one student in a building near Fort St. George. Founded by Michael Topping, the school became the Civil Engineering School in 1858.  It was then rechristened as College of Engineering in 1861 with the inclusion of the Mechanical Engineering course.
+            The college came to be called as College of Engineering (CEG) in 1894.More</item>
+        <item>Arts Society,though a small fraternity, takes the onus of all the student related activities with impeccable probity and takes the privilege in acting as a candle of light under any ordeal. he cultural entities like Agni,Techofes are solely dependent on the labour of Arts Society and we perform it with the fullest commitment.</item>
+        <item>Students Association is elected organ of College Of Engineering,Guindy,which stays as a symbol of democracy at college level.It has a primary role of liaising with the authority as a way of enhancing communication and students active participation.Effective combination of Students Association and Arts Society of CEG making a comprehensive framework often referred to as SAAS presents the unprecedented attraction of cultural fest like Techofes,Agni and freshers day every year.This organ should necessarily be called the heart of the campus.Its functions stretches up to the extent of socializing,sharing ideas and getting connected with fellow Alumni of CEG,thereby getting access to ideas.</item>
+        <item>Techofes, the inter college social and cultural festival, is a paragon of exultancy
+        which enables the students to exploit their gamut of
+        dexterous abilities that remains surreptitious inside their soul and
+        to portray their talents to the outer world. Unlike its counterpart Agni ,
+        Techofes spots light on all the students in and around the nation. The Arts
+        Society has subjugated the obstreperous ambience for several years and the 70th edition
+        also promises to deliver even better enchantments and gaiety, making the memories indelible.</item>
+        <item>Agni (meaning : fire ) is the intra-college cultural festival that is meant to be organized to make the incoming freshers know the hilarious and lighter side of the main campus of Anna University, which always serves as a benchmark for the college in its vicinity and beyond. With a plethora of events and arenas to expose the various hidden and dormant talents of the students, like arts, crafts, intelligence quotient apart from miscellaneous round-up of other activities
+        </item>
+
+    </string-array>
+
+
     <string name="techofes_title">Techofes</string>
     <string name="slide_1_title">Hello People!</string>
     <string name="slide_1_desc">Techofes is here!</string>
