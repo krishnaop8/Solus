@@ -18,6 +18,8 @@ public class Events {
     public static final Map<String, Events> ITEM_MAP = new HashMap<String, Events>();
 
     private static final int COUNT = 25;
+    private int imageId;
+    private int colorId;
 
     public String getTitle() {
         return title;
@@ -25,7 +27,26 @@ public class Events {
 
     public final String title;
 
-        public Events(String content) {
+    public int getImageId() {
+        return imageId;
+    }
+
+    public void setImageId(int imageId) {
+        this.imageId = imageId;
+    }
+
+    public int getColorId() {
+        return colorId;
+    }
+
+    public void setColorId(int colorId) {
+        this.colorId = colorId;
+    }
+
+    public Events(int imageId, String content, int colorId) {
+            this.imageId = imageId;
+            this.colorId = colorId;
+
             this.title = content;
         }
 

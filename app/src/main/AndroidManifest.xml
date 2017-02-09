@@ -25,7 +25,9 @@
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/Techofes" />
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".LoginActivity"
+            android:label="Login"
+            android:theme="@style/Techofes"/>
     </application>
 
 </manifest>

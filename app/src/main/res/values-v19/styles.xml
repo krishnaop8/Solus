@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <style name="Techofes" parent="Theme.AppCompat.Light.NoActionBar">
+                <!-- Customize your theme here. -->
+                <item name="colorPrimary">#fff</item>
+                <item name="colorPrimaryDark">#fff</item>
+                <item name="colorAccent">#000</item>
+                <item name="android:windowTranslucentStatus">true</item>
+        </style>
+</resources>

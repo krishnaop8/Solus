@@ -4,7 +4,8 @@
     android:layout_height="match_parent"
     tools:context="com.example.omprakash.solus.EventFragment"
     android:orientation="vertical"
-    android:background="#fff">
+    android:background="#fff"
+    android:padding="1dp">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"
