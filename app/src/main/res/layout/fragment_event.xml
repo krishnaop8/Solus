@@ -1,3 +1,13 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:padding="1dp"
+    android:id="@+id/eventLayout"
+    >
 <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -13,5 +23,9 @@
         android:layout_height="match_parent"
         android:scrollbars="vertical"
         />
-
 </GridLayout>
+    <FrameLayout android:name="fragments.SubListFragment"
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dip" />
+</LinearLayout>
