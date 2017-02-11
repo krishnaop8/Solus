@@ -10,9 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.tomer.fadingtextview.FadingTextView;
-
-import jp.wasabeef.blurry.Blurry;
 
 public class AboutFragment extends Fragment {
 

@@ -1,0 +1,87 @@
+<android.support.v7.widget.CardView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="2dp"
+    app:cardBackgroundColor="#fff"
+    android:layout_margin="3dp"
+    android:padding="2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/rl">
+        <Button
+    android:id="@+id/eventTitle"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:drawableRight="@android:drawable/arrow_down_float"
+    android:paddingRight="10dp"
+    android:text="Content"
+    android:textSize="20sp"
+    android:textColor="#000"
+    android:layout_gravity="top"/>
+    </RelativeLayout>
+
+
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:gravity="bottom"
+    android:id="@+id/expandableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="#ba68c8"
+    android:padding="16dp"
+    app:ael_duration="400"
+    app:ael_expanded="false"
+        app:ael_interpolator="fastOutLinearIn"
+    app:ael_orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact"
+                android:layout_below="@+id/venue"
+                android:textSize="18sp"
+                android:textColor="#fff"
+                android:layout_marginBottom="5dp"
+                android:maxLines="30" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:id="@+id/venue"
+                android:layout_below="@+id/Schedule"
+                android:textSize="18sp"/>
+
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Schedule"
+                android:textColor="#fff"
+                android:layout_below="@+id/about"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/about"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:elevation="6dp" />
+        </RelativeLayout>
+
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+</android.support.v7.widget.CardView>

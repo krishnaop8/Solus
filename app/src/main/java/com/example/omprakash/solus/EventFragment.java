@@ -23,7 +23,6 @@ public class EventFragment extends Fragment {
     private GridLayoutManager gridLayoutManager;
     private EventsAdapter eventsAdapter;
     private ArrayList<Events> EventList;
-
     public EventFragment() {
         // Required empty public constructor
     }
@@ -36,6 +35,7 @@ public class EventFragment extends Fragment {
         mRecyclerView = (RecyclerView)view.findViewById(R.id.recyclerView);
         gridLayoutManager = new GridLayoutManager(EventFragment.this.getActivity(),2);
         //mLinearLayoutManager = new LinearLayoutManager(EventFragment.this.getActivity());
+
         String[] eventsList = getResources().getStringArray(R.array.event_list);
         List<String> mEventsList = new ArrayList<String>(Arrays.asList(eventsList));
         int[] eventColorList = getResources().getIntArray(R.array.events_color_array);
@@ -61,7 +61,6 @@ public class EventFragment extends Fragment {
         populate(R.drawable.tamil,mEventsList.get(12),mColorList.get(11));
         populate(R.drawable.music,mEventsList.get(13),mColorList.get(12));
         populate(R.drawable.fun,mEventsList.get(14),mColorList.get(13));
-
 
         eventsAdapter = new EventsAdapter(EventList,EventFragment.this.getContext(),EventFragment.this);
         mRecyclerView.setLayoutManager(gridLayoutManager);

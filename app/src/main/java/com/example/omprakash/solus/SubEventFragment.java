@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -36,7 +37,7 @@ public class SubEventFragment extends Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
     Toolbar toolbar;
-    private String subEventURL = "https://api.myjson.com/bins/wy465";
+    private String subEventURL = "https://api.myjson.com/bins/1akd61";
 
     // TODO: Rename and change types of parameters
     private String eventTitle;
@@ -48,6 +49,7 @@ public class SubEventFragment extends Fragment {
     private SubEventAdapter subEventAdapter;
     private TextView EmptyTextView;
     private ArrayList<SubEvents> AL;
+    private CardView cardView;
 
     public SubEventFragment() {
     }
@@ -82,7 +84,7 @@ public class SubEventFragment extends Fragment {
 
         getList();
 
-        subEventAdapter = new SubEventAdapter(SubEventsList,SubEventFragment.this.getContext(),SubEventFragment.this,eventTitle);
+        subEventAdapter = new SubEventAdapter(SubEventsList,SubEventFragment.this.getContext(),SubEventFragment.this,eventTitle,colorId);
 
         mRecyclerView.setAdapter(subEventAdapter);
         return view;
@@ -103,6 +105,7 @@ public class SubEventFragment extends Fragment {
                             se.setmSchedule(j.getString("Schedule"));
                             se.setmContact(j.getString("Contact"));
                             se.setmVenue(j.getString("Venue"));
+                            se.setmEventTitle(j.getString("Event Title"));
                             SubEventsList.add(se);
                             subEventAdapter.notifyDataSetChanged();
                         }

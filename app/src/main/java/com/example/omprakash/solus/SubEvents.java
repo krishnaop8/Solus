@@ -10,6 +10,16 @@ public class SubEvents {
     private String mContact;
     private String mEvent;
 
+    public String getmEventTitle() {
+        return mEventTitle;
+    }
+
+    public void setmEventTitle(String mEventTitle) {
+        this.mEventTitle = mEventTitle;
+    }
+
+    private String mEventTitle;
+
     public String getmEvent() {
         return mEvent;
     }

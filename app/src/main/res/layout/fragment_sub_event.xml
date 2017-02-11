@@ -1,19 +1,10 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.v7.widget.RecyclerView android:id="@+id/recyclerView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.omprakash.solus.SubEventFragment"
-    android:id="@+id/subEventList"
-    android:background="#fff"
-    >
+    android:scrollbars="vertical"
+    android:padding="5dp"
+    layout_height="match_parent"
+    layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#fff"/>
 
-    <!-- TODO: Update blank fragment layout -->
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scrollbars="vertical"
-        android:padding="2dp"
-        />
-
-</RelativeLayout>
