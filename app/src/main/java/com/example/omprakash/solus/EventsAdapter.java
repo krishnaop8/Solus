@@ -2,20 +2,13 @@ package com.example.omprakash.solus;
 
 import android.content.Context;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.widget.LinearLayoutCompat;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.RecyclerView.ViewHolder;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.omprakash.solus.Events.Events;
 
@@ -25,11 +18,10 @@ import java.util.ArrayList;
 public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.EventHolder> {
     public Context context;
     EventHolder eventHolder;
-    int lastPosition = -1;
     public ArrayList<Events> EventList;
     public EventFragment eventFragment;
 
-    public EventsAdapter(ArrayList<Events> events,Context context,EventFragment e){
+    public EventsAdapter(ArrayList<Events> events, Context context, EventFragment e){
         this.eventFragment=e;
         this.context=context;
         EventList = events;
@@ -49,15 +41,6 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.EventHolde
         holder.eventTitle.setText(events.getTitle());
         holder.imageView.setImageResource(events.getImageId());
         holder.linearLayout.setBackgroundColor(events.getColorId());
-     /*   if(position >lastPosition) {
-
-            Animation animation = AnimationUtils.loadAnimation(context,
-                    R.anim.up_from_bottom);
-            eventHolder.itemView.startAnimation(animation);
-            lastPosition = position;
-       }*/
-
-
     }
 
     @Override
@@ -74,7 +57,7 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.EventHolde
         ArrayList<Events> mEventList = new ArrayList<Events>();
         Context ctx;
         EventFragment EF;
-        public EventHolder(View itemView,Context ctx,ArrayList<Events> e,EventFragment EF) {
+        public EventHolder(View itemView, Context ctx, ArrayList<Events> e, EventFragment EF) {
             super(itemView);
             this.EF=EF;
             this.mEventList = e;

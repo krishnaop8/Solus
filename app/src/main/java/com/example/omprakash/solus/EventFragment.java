@@ -1,11 +1,8 @@
 package com.example.omprakash.solus;
 
 
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -26,7 +23,6 @@ public class EventFragment extends Fragment {
     private GridLayoutManager gridLayoutManager;
     private EventsAdapter eventsAdapter;
     private ArrayList<Events> EventList;
-    public LinearLayout linearLayout;
 
     public EventFragment() {
         // Required empty public constructor
@@ -38,7 +34,6 @@ public class EventFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_event, container, false);
         mRecyclerView = (RecyclerView)view.findViewById(R.id.recyclerView);
-        linearLayout = (LinearLayout)view.findViewById(R.id.eventLayout);
         gridLayoutManager = new GridLayoutManager(EventFragment.this.getActivity(),2);
         //mLinearLayoutManager = new LinearLayoutManager(EventFragment.this.getActivity());
         String[] eventsList = getResources().getStringArray(R.array.event_list);
