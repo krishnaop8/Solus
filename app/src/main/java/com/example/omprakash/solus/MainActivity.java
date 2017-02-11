@@ -23,14 +23,21 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.freegeek.android.materialbanner.MaterialBanner;
+import com.freegeek.android.materialbanner.holder.ViewHolderCreator;
+import com.freegeek.android.materialbanner.view.indicator.CirclePageIndicator;
+
 import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     int[] images  =new int[]{
             R.drawable.image1,
-            R.drawable.image2
+            R.drawable.image2,
+            R.drawable.image3
     };
+
 
     ViewPager viewPager;
     ImageSliderAdapter imageSliderAdapter;
@@ -42,8 +49,10 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        imageSliderAdapter = new ImageSliderAdapter(this);
-        viewPager = (ViewPager)findViewById(R.id.imageSlider);
+
+
+       imageSliderAdapter = new ImageSliderAdapter(this);
+       viewPager = (ViewPager)findViewById(R.id.imageSlider);
         viewPager.setAdapter(imageSliderAdapter);
         getSupportActionBar().setTitle(R.string.app_name);
 
@@ -67,6 +76,7 @@ public class MainActivity extends AppCompatActivity
 
 
     }
+
 
     @Override
     public void onBackPressed() {
@@ -95,12 +105,6 @@ public class MainActivity extends AppCompatActivity
         }
 
         return super.onOptionsItemSelected(item);
-    }
-    public void login()
-    {
-        LoginFragment loginFragment = new LoginFragment();
-        FragmentManager manager = getSupportFragmentManager();
-        manager.beginTransaction().replace(R.id.content_main,loginFragment,loginFragment.getTag()).commit();
     }
 
     @SuppressWarnings("StatementWithEmptyBody")
@@ -160,6 +164,11 @@ public class MainActivity extends AppCompatActivity
             imageView.setImageResource(images[position]);
             container.addView(itemView);
             return itemView;
+        }
+
+        @Override
+        public void destroyItem(ViewGroup container, int position, Object object) {
+
         }
 
         @Override
