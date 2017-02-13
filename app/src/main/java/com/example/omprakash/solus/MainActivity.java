@@ -9,6 +9,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.RecyclerView;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -22,6 +23,7 @@ import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.freegeek.android.materialbanner.MaterialBanner;
 import com.freegeek.android.materialbanner.holder.ViewHolderCreator;
@@ -73,8 +75,6 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-
-
     }
 
 
@@ -90,7 +90,6 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
@@ -98,36 +97,29 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
+
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
         int id = item.getItemId();
         if(id == R.id.nav_home){
-                Intent intent = new Intent(MainActivity.this,LoginActivity.class);
-            startActivity(intent);
 
         }
         if (id == R.id.nav_event) {
-                EventFragment eventFragment = new EventFragment();
+            EventFragment eventFragment = new EventFragment();
             FragmentManager manager = getSupportFragmentManager();
-            manager.beginTransaction().replace(R.id.content_main,eventFragment,eventFragment.getTag()).commit();
+            manager.beginTransaction().replace(R.id.content_main,eventFragment,eventFragment.getTag()).addToBackStack(null).commit();
 
         }
         else if (id == R.id.nav_workshop) {
 
         } else if (id == R.id.nav_pro_night) {
-
-        } else if (id == R.id.nav_blog) {
 
         } else if (id == R.id.nav_about) {
             AboutFragment aboutFragment = new AboutFragment();
@@ -168,12 +160,12 @@ public class MainActivity extends AppCompatActivity
 
         @Override
         public void destroyItem(ViewGroup container, int position, Object object) {
-
+          //  super.destroyItem(container, position, object);
         }
 
         @Override
         public boolean isViewFromObject(View view, Object object) {
-            return view == ((LinearLayout) object);
+            return view == ( object);
         }
     }
 }

@@ -19,10 +19,6 @@
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Pro Night" />
         <item
-            android:id="@+id/nav_blog"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Blog" />
-        <item
             android:id="@+id/nav_about"
             android:icon="@drawable/ic_menu_manage"
             android:title="About" />
