@@ -35,9 +35,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     int[] images  =new int[]{
-            R.drawable.image1,
-            R.drawable.image2,
-            R.drawable.image3
+            R.drawable.techofescoverphoto
     };
 
 
@@ -127,6 +125,9 @@ public class MainActivity extends AppCompatActivity
             manager.beginTransaction().replace(R.id.content_main,aboutFragment,aboutFragment.getTag()).commit();
 
         } else if (id == R.id.nav_contact) {
+            ContactFragment contactFragment = new ContactFragment();
+            FragmentManager manager = getSupportFragmentManager();
+            manager.beginTransaction().replace(R.id.content_main,contactFragment).addToBackStack(null).commit();
 
         }
 
