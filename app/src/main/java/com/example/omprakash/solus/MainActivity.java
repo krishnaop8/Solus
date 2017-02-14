@@ -28,6 +28,8 @@ import android.widget.RelativeLayout;
 import com.freegeek.android.materialbanner.MaterialBanner;
 import com.freegeek.android.materialbanner.holder.ViewHolderCreator;
 import com.freegeek.android.materialbanner.view.indicator.CirclePageIndicator;
+import com.schibsted.spain.parallaxlayerlayout.ParallaxLayerLayout;
+import com.schibsted.spain.parallaxlayerlayout.SensorTranslationUpdater;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,6 +43,7 @@ public class MainActivity extends AppCompatActivity
 
     ViewPager viewPager;
     ImageSliderAdapter imageSliderAdapter;
+    ParallaxLayerLayout parallaxLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,20 +53,11 @@ public class MainActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
 
 
-
        imageSliderAdapter = new ImageSliderAdapter(this);
        viewPager = (ViewPager)findViewById(R.id.imageSlider);
         viewPager.setAdapter(imageSliderAdapter);
         getSupportActionBar().setTitle(R.string.app_name);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
